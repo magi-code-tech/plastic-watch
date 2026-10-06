@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plastic Watch - User Dashboard</title>
+
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+
+<header>
+
+    <div>
+        <h1>♻️ Plastic Watch</h1>
+        <p>Plastic Waste Reporting & Cleanup System</p>
+    </div>
+
+    <div class="user-name">
+        👤 Citizen
+    </div>
+
+</header>
+
+
+<div class="dashboard">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <h2>📊 User Dashboard</h2>
+
+        <div class="menu active"
+             onclick="showSection('home')">
+            🏠 Home
+        </div>
+
+        <div class="menu"
+             onclick="showSection('report')">
+            📝 Report Plastic Waste
+        </div>
+
+        <div class="menu"
+             onclick="showSection('track')">
+            🔍 Track My Complaint
+        </div>
+
+        <div class="menu"
+             onclick="showSection('reports')">
+            📋 My Reports
+        </div>
+
+        <div class="menu"
+             onclick="showSection('about')">
+            ℹ️ About Plastic Watch
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+
+        <!-- HOME -->
+
+        <section id="home" class="section">
+
+            <h2>Welcome to Plastic Watch 👋</h2>
+
+            <p>
+                Report plastic waste and help keep
+                our surroundings clean.
+            </p>
+
+
+            <div class="cards">
+
+
+                <!-- REPORT CARD -->
+
+                <div class="card">
+
+                    <h3>📝 Report Waste</h3>
+
+                    <p>
+                        Report plastic waste with
+                        photo, location and description.
+                    </p>
+
+                    <button onclick="goReport()">
+                        Report Now
+                    </button>
+
+                </div>
+
+
+                <!-- TRACK CARD -->
+
+                <div class="card">
+
+                    <h3>🔍 Track Complaint</h3>
+
+                    <p>
+                        Check the current status
+                        of your complaint.
+                    </p>
+
+                    <button onclick="showSection('track')">
+                        Track Now
+                    </button>
+
+                </div>
+
+
+                <!-- MY REPORTS CARD -->
+
+                <div class="card">
+
+                    <h3>📋 My Reports</h3>
+
+                    <p>
+                        View your submitted reports
+                        and their status.
+                    </p>
+
+                    <button onclick="showSection('reports')">
+                        View Reports
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- REPORT -->
+
+        <section id="report"
+                 class="section hidden">
+
+            <h2>📝 Report Plastic Waste</h2>
+
+            <p>
+                Report plastic waste found in your area.
+            </p>
+
+            <button onclick="goReport()">
+                📷 Open Report Form
+            </button>
+
+        </section>
+
+
+
+        <!-- TRACK -->
+
+        <section id="track"
+                 class="section hidden">
+
+            <h2>🔍 Track My Complaint</h2>
+
+            <p>
+                Enter your Complaint ID to check
+                the current status.
+            </p>
+
+
+            <div class="track-box">
+
+                <input
+                    type="text"
+                    id="complaintId"
+                    placeholder="Example: PW-123456"
+                >
+
+                <button onclick="trackComplaint()">
+                    🔍 Track Complaint
+                </button>
+
+            </div>
+
+
+            <div id="trackResult"></div>
+
+        </section>
+
+
+
+        <!-- MY REPORTS -->
+
+        <section id="reports"
+                 class="section hidden">
+
+            <h2>📋 My Reports</h2>
+
+            <p>
+                Your submitted plastic waste reports.
+            </p>
+
+
+            <div id="myReports">
+
+                <p>
+                    Click to load your reports.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT -->
+
+        <section id="about"
+                 class="section hidden">
+
+            <div class="about-card">
+
+                <h2>ℹ️ About Plastic Watch</h2>
+
+                <p>
+                    Plastic Watch is a web-based system
+                    designed to help people report
+                    plastic waste.
+                </p>
+
+                <p>
+                    Citizens can report plastic waste
+                    with location, photo and description.
+                </p>
+
+                <p>
+                    Authorities can manage the reports
+                    and update the cleanup status.
+                </p>
+
+                <h3>♻️ Our Goal</h3>
+
+                <p>
+                    To reduce plastic pollution and
+                    create cleaner public places.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<!-- Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+
+<!-- Our JavaScript -->
+
+<script src="user.js"></script>
+
+</body>
+
+</html>

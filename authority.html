@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plastic Watch - Authority Dashboard</title>
+
+    <link rel="stylesheet" href="authority.css">
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="brand">
+
+            <h1>♻️ Plastic Watch</h1>
+
+            <p>Plastic Waste Reporting & Cleanup System</p>
+
+        </div>
+
+
+        <div class="authority">
+
+            🏛️ Authority Dashboard
+
+        </div>
+
+    </header>
+
+
+
+    <!-- PAGE LAYOUT -->
+
+    <div class="layout">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <h2>📊 Dashboard</h2>
+
+
+            <div class="menu active">
+
+                🏠 Dashboard
+
+            </div>
+
+
+            <div class="menu">
+
+                📋 All Reports
+
+            </div>
+
+
+            <div class="menu">
+
+                ⏳ Pending
+
+            </div>
+
+
+            <div class="menu">
+
+                🔄 In Progress
+
+            </div>
+
+
+            <div class="menu">
+
+                ✅ Completed
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="menu">
+
+                🛡️ Rules & Regulations
+
+            </div>
+
+
+            <div class="menu">
+
+                ⚙️ Settings
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                🌍
+
+                <p>
+                    Keep our surroundings
+                    clean and plastic-free.
+                </p>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+
+            <!-- WELCOME -->
+
+            <section class="welcome">
+
+                <h2>Authority Dashboard</h2>
+
+                <p>
+                    Manage and monitor plastic waste reports.
+                </p>
+
+            </section>
+
+
+
+            <!-- STATISTICS -->
+
+            <section class="stats">
+
+
+                <div class="stat-card total">
+
+                    <div class="icon">
+                        📋
+                    </div>
+
+                    <div>
+
+                        <h3 id="totalReports">
+                            0
+                        </h3>
+
+                        <p>
+                            Total Reports
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card pending">
+
+                    <div class="icon">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <h3 id="pendingReports">
+                            0
+                        </h3>
+
+                        <p>
+                            Pending
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card progress">
+
+                    <div class="icon">
+                        🔄
+                    </div>
+
+                    <div>
+
+                        <h3 id="progressReports">
+                            0
+                        </h3>
+
+                        <p>
+                            In Progress
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card completed">
+
+                    <div class="icon">
+                        ✅
+                    </div>
+
+                    <div>
+
+                        <h3 id="completedReports">
+                            0
+                        </h3>
+
+                        <p>
+                            Completed
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- CONTENT -->
+
+            <div class="content-grid">
+
+
+                <!-- REPORTS -->
+
+                <section class="reports-section">
+
+                    <h2>
+                        ♻️ Plastic Waste Reports
+                    </h2>
+
+
+                    <div id="reportsContainer">
+
+                        <p class="loading">
+                            Loading reports...
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- RULES -->
+
+                <section class="rules-card">
+
+                    <h2>
+                        🛡️ Authority Rules & Regulations
+                    </h2>
+
+
+                    <ol>
+
+                        <li>
+                            <strong>
+                                Verify every report.
+                            </strong>
+
+                            Check the photo,
+                            location and description.
+                        </li>
+
+
+                        <li>
+                            <strong>
+                                Prioritize serious areas.
+                            </strong>
+
+                            Give priority to rivers,
+                            roads, schools and public places.
+                        </li>
+
+
+                        <li>
+                            <strong>
+                                Update report status.
+                            </strong>
+
+                            <br>
+
+                            Pending →
+                            In Progress →
+                            Completed
+                        </li>
+
+
+                        <li>
+                            <strong>
+                                Verify cleanup.
+                            </strong>
+
+                            Confirm that the plastic waste
+                            has been removed before completion.
+                        </li>
+
+
+                        <li>
+                            <strong>
+                                Protect privacy.
+                            </strong>
+
+                            Do not publicly display
+                            reporter personal information.
+                        </li>
+
+
+                        <li>
+                            <strong>
+                                Follow safety rules.
+                            </strong>
+
+                            Cleanup activities should follow
+                            applicable local safety guidelines.
+                        </li>
+
+
+                        <li>
+                            <strong>
+                                Maintain proper records.
+                            </strong>
+
+                            Keep report and cleanup information
+                            updated.
+                        </li>
+
+
+                        <li>
+                            <strong>
+                                No false reports.
+                            </strong>
+
+                            Only genuine plastic waste
+                            reports should be processed.
+                        </li>
+
+                    </ol>
+
+
+                    <div class="rules-note">
+
+                        ♻️ <strong>Plastic Watch Goal</strong>
+
+                        <p>
+                            Reduce plastic pollution
+                            and create cleaner public places.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- FIREBASE -->
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+
+    <!-- AUTHORITY JAVASCRIPT -->
+
+    <script src="authority.js"></script>
+
+
+</body>
+
+</html>

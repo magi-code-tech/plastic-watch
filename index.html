@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Plastic Watch - Report</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>♻️ Plastic Watch</h1>
+
+        <p>
+            Report Plastic Waste and Help Keep
+            Our Environment Clean
+        </p>
+
+    </header>
+
+
+    <div class="container">
+
+        <h2>Report Plastic Waste</h2>
+
+
+        <form id="reportForm">
+
+
+            <!-- PHOTO -->
+
+            <label for="photo">
+                📷 Upload Photo
+            </label>
+
+            <input
+                type="file"
+                id="photo"
+                accept="image/*"
+                required
+            >
+
+
+            <!-- LOCATION -->
+
+            <label for="location">
+                📍 Location
+            </label>
+
+            <div class="location-box">
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Click Get My Location"
+                    required
+                    readonly
+                >
+
+                <button
+                    type="button"
+                    onclick="getLocation()"
+                >
+                    📍 Get My Location
+                </button>
+
+            </div>
+
+
+            <p id="locationMessage"></p>
+
+
+            <!-- DESCRIPTION -->
+
+            <label for="description">
+                📝 Problem Description
+            </label>
+
+            <textarea
+                id="description"
+                placeholder="Describe the plastic waste problem"
+                required
+            ></textarea>
+
+
+            <!-- SUBMIT -->
+
+            <button type="submit">
+                Submit Report
+            </button>
+
+
+        </form>
+
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <!-- FIREBASE -->
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+
+    <!-- YOUR JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
